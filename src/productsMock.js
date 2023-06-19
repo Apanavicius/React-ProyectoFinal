@@ -6,7 +6,7 @@ export const products = [
     stock: 2,
     description: "Un libro..A",
     author: "Kobe Bryant",
-    category: "Psicología Deportiva",
+    categorie: "Psicología Deportiva",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234671/BooksSale/deporte02_fixfqc.png",
   },
@@ -17,7 +17,7 @@ export const products = [
     stock: 3,
     description: "Un libro..B",
     author: "Phil Jackson",
-    category: "Psicología Deportiva",
+    categorie: "Psicología Deportiva",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234671/BooksSale/deporte03_ov5czn.png",
   },
@@ -28,7 +28,7 @@ export const products = [
     stock: 4,
     description: "Un libro..C",
     author: "Tim Rich",
-    category: "Psicología Deportiva",
+    categorie: "Psicología Deportiva",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234671/BooksSale/deporte05_hyjwnq.png",
   },
@@ -39,7 +39,7 @@ export const products = [
     stock: 2,
     description: "Un libro..D",
     author: "Sergio Cachito Vigil",
-    category: "Psicología Deportiva",
+    categorie: "Psicología Deportiva",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234671/BooksSale/deporte01_at1jli.png",
   },
@@ -50,7 +50,7 @@ export const products = [
     stock: 7,
     description: "Un libro..E",
     author: "Santiago Lange",
-    category: "Psicología Deportiva",
+    categorie: "Psicología Deportiva",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234670/BooksSale/deporte04_lqda4t.png",
   },
@@ -61,7 +61,7 @@ export const products = [
     stock: 8,
     description: "Un libro..F",
     author: "Tim Ferris",
-    category: "Desarrollo Personal",
+    categorie: "Desarrollo Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234758/BooksSale/desarrollo06_v51oxa.png",
   },
@@ -72,7 +72,7 @@ export const products = [
     stock: 10,
     description: "Un libro..G",
     author: "Séneca",
-    category: "Desarrollo Personal",
+    categorie: "Desarrollo Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234758/BooksSale/desarrollo05_dpgza8.png",
   },
@@ -83,7 +83,7 @@ export const products = [
     stock: 7,
     description: "Un libro..H",
     author: "Charles Duhigg",
-    category: "Desarrollo Personal",
+    categorie: "Desarrollo Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234709/BooksSale/desarrollo02_juagho.png",
   },
@@ -94,7 +94,7 @@ export const products = [
     stock: 3,
     description: "Un libro..I",
     author: "Epicteto",
-    category: "Desarrollo Personal",
+    categorie: "Desarrollo Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234708/BooksSale/desarrollo01_vkotc4.png",
   },
@@ -105,7 +105,7 @@ export const products = [
     stock: 5,
     description: "Un libro..J",
     author: "JR Tolkien",
-    category: "Ficción|Aventura",
+    categorie: "Aventura",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234690/BooksSale/Aventura01_krxpj7.png",
   },
@@ -116,7 +116,7 @@ export const products = [
     stock: 4,
     description: "Un libro..K",
     author: "JR Tolkien",
-    category: "Ficción|Aventura",
+    categorie: "Aventura",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234690/BooksSale/aventura02_tsbaof.png",
   },
@@ -127,7 +127,7 @@ export const products = [
     stock: 5,
     description: "Un libro..L",
     author: "JR Tolkien",
-    category: "Ficción|Aventura",
+    categorie: "Aventura",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234690/BooksSale/aventura03_cxf6vu.png",
   },
@@ -138,7 +138,7 @@ export const products = [
     stock: 11,
     description: "Un libro..M",
     author: "Ursula K. Leguin",
-    category: "Ficción|Aventura",
+    categorie: "Aventura",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234708/BooksSale/aventura04_isi4zg.png",
   },
@@ -149,7 +149,7 @@ export const products = [
     stock: 5,
     description: "Un libro..N",
     author: "Ursula K. Leguin",
-    category: "Ficción|Aventura",
+    categorie: "Aventura",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234708/BooksSale/aventura05_ps2wpv.png",
   },
@@ -160,7 +160,7 @@ export const products = [
     stock: 2,
     description: "Un libro..O",
     author: "Ursula K. Leguin",
-    category: "Ficción|Aventura",
+    categorie: "Aventura",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234708/BooksSale/aventura06_uc0vkw.png",
   },
@@ -171,7 +171,7 @@ export const products = [
     stock: 5,
     description: "Un libro..P",
     author: "Ursula K. Leguin",
-    category: "Ficción|Aventura",
+    categorie: "Aventura",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234708/BooksSale/aventura07_nhwoge.png",
   },
@@ -182,7 +182,7 @@ export const products = [
     stock: 3,
     description: "Un libro..R",
     author: "Benjamin Graham",
-    category: "Finanza Personal",
+    categorie: "Finanza Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234690/BooksSale/inversion01_zpnf9e.png",
   },
@@ -193,7 +193,7 @@ export const products = [
     stock: 5,
     description: "Un libro..P",
     author: "Raimon Samsó",
-    category: "Finanza Personal",
+    categorie: "Finanza Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234690/BooksSale/inversion02_fbvvys.png",
   },
@@ -204,7 +204,7 @@ export const products = [
     stock: 9,
     description: "Un libro..S",
     author: "T Harv Eker",
-    category: "Finanza Personal",
+    categorie: "Finanza Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234690/BooksSale/inversion03_xqtpm3.png",
   },
@@ -215,7 +215,7 @@ export const products = [
     stock: 5,
     description: "Un libro..T",
     author: "Robert Kiyosaki",
-    category: "Ficción|Aventura",
+    categorie: "Finanza Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234708/BooksSale/inversion04_jqpv31.png",
   },
@@ -226,7 +226,7 @@ export const products = [
     stock: 12,
     description: "Un libro..U",
     author: "Vicki Robin",
-    category: "Ficción|Aventura",
+    categorie: "Finanza Personal",
     image:
       "https://res.cloudinary.com/dlqijmifn/image/upload/v1686234708/BooksSale/inversion05_q4ypeu.png",
   },

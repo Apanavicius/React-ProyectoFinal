@@ -2,8 +2,6 @@ import ItemCounter from "../../ItemCounter";
 
 export const ProductDetail = ({ productSelected }) => {
   const { title, author, description, image, price, stock } = productSelected;
-  console.log("Ingresé a productDetail");
-  console.log("Stock dentro del ProductDetail:", stock);
 
   const onAdd = (aNumber) => {
     let data = {
