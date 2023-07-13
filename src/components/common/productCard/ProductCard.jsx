@@ -9,6 +9,8 @@ import {
 
 import { Link } from "react-router-dom";
 
+//  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
 const ProductCard = ({ item }) => {
   //el maxWidth de abajo se pude cambiar por width..
   return (

@@ -1,23 +1,32 @@
+import { Button } from "@mui/material";
 import { useCount } from "../hooks/useCount";
 
-const ItemCounter = ({ initial, upperBound, onAdd }) => {
-  console.log("upperBound:", upperBound);
+//  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
+const ItemCounter = ({ initial = 1, upperBound, onAdd }) => {
   const { count, decrement, increment } = useCount(initial, upperBound);
 
   return (
     <>
       <div className="count-container">
-        <button onClick={decrement}> - </button>
-        <span> {count} </span>
-        <button onClick={increment}> + </button>
-        <button
+        <Button variant="contained" onClick={decrement}>
+          -
+        </Button>
+
+        <h2> {count} </h2>
+
+        <Button variant="contained" onClick={increment}>
+          +
+        </Button>
+
+        <Button
+          variant="contained"
           onClick={() => {
-            count;
+            onAdd(count);
           }}
         >
           Agregar al carrito
-        </button>
+        </Button>
       </div>
     </>
   );

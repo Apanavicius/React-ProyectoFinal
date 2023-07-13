@@ -1,28 +1,53 @@
 import { useEffect, useState } from "react";
-import { products } from "../../../productsMock";
+import { database } from "../../../firebaseConfig";
 import { ItemList } from "./ItemList";
+
 import { useParams } from "react-router-dom";
+import { ClockLoader } from "react-spinners";
+import { collection, getDocs, query, where } from "firebase/firestore";
+
+//  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
-  const { categorieSelection } = useParams();
+  const { categorySelected } = useParams();
 
   useEffect(() => {
-    let filteredItems = products.filter(
-      (item) => item.categorie === categorieSelection
-    );
-    const tarea = new Promise((resolve) => {
-      resolve(categorieSelection ? filteredItems : products);
-    });
+    let productsCollection = collection(database, "products");
 
-    tarea
+    let consulta;
+
+    // If categorySelected is falsy => Show everything (I'm in home).
+    // Case not, show respective content category.
+    !categorySelected
+      ? (consulta = productsCollection)
+      : (consulta = query(
+          productsCollection,
+          where("category", "==", categorySelected)
+        ));
+
+    getDocs(consulta)
       .then((res) => {
-        setItems(res);
+        let products = res.docs.map((element) => {
+          return {
+            id: element.id,
+            ...element.data(),
+          };
+        });
+        setItems(products);
       })
-      .catch((err) => {
-        console.log("catch:", err);
-      });
-  }, [categorieSelection]);
+      .catch((err) => console.log(err));
+  }, [categorySelected]);
 
-  return <ItemList items={items} />;
+  return (
+    <>
+      {items.length > 0 ? (
+        <ItemList items={items} />
+      ) : (
+        <ClockLoader color="#1e0f67" size={100} speedMultiplier={1} />
+      )}
+    </>
+  );
 };
+
+// https://www.davidhu.io/react-spinners/storybook/?path=/docs/clockloader--main

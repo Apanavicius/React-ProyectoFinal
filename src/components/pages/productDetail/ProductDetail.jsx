@@ -1,26 +1,25 @@
 import ItemCounter from "../../ItemCounter";
 
-export const ProductDetail = ({ productSelected }) => {
-  const { title, author, description, image, price, stock } = productSelected;
+//  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
-  const onAdd = (aNumber) => {
-    let data = {
-      ...productSelected,
-      quantity: aNumber,
-    };
-    console.log("stock del ProductDetail:", stock);
-    console.log("DATA:", data);
-  };
+export const ProductDetail = ({ productSelected, qty, onAdd }) => {
+  const { title, author, description, image, price, stock } = productSelected;
 
   return (
     <>
-      <div>{title}</div>
-      <div>{author}</div>
-      <div>{description}</div>
-      <img src={image} alt="portadaLibro" />
-      <div>${price}</div>
-      <div>Stock: #{stock}</div>
-      <ItemCounter initial={1} upperBound={stock} onAdd={onAdd} />
+      <div>
+        <h2>{title}</h2>
+        <h2>{author}</h2>
+        <h2>{description}</h2>
+        <img src={image} alt="portadaLibro" />
+        <h3>${price}</h3>
+        <h3>Stock: #{stock}</h3>
+      </div>
+      {productSelected.stock > 0 ? (
+        <ItemCounter initial={qty} upperBound={stock} onAdd={onAdd} />
+      ) : (
+        <h3>No hay Stock disponible</h3>
+      )}
     </>
   );
 };

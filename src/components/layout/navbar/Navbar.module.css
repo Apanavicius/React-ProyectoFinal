@@ -1,12 +1,21 @@
+/* a {
+  text-decoration: none;
+  color: rgb(39, 165, 22);
+  /* display: inline;
+  margin: 1%;
+} */
+
+/*
 nav {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 40px;
-  color: brown;
+  // color: brown; //
+  font-size: larger;
 }
 
 .logo {
@@ -15,10 +24,12 @@ nav {
 }
 
 span {
-  color: rgb(157, 116, 197);
+  color: rgb(230, 20, 55);
 }
 
-nav ul li {
+
+
+nav ul {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
@@ -26,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(255, 252, 252);
+  color: rgb(245, 222, 20);
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
@@ -35,4 +46,4 @@ nav ul li a {
 nav ul li a:hover {
   color: blueviolet;
   transition: 0.5s;
-}
+} */

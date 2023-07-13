@@ -1,28 +1,37 @@
-import { CartWidget } from "../../common/cartWidget/CartWidget";
+import { navbarLinks } from "../../../routes/navbarLinks";
+// import { CartWidget } from "../../common/cartWidget/CartWidget";
 import "./Navbar.module.css";
-
 import { Link } from "react-router-dom";
+
+//  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
 export const Navbar = () => {
   return (
-    <>
-      <nav className="container-navbar">
+    /*<header>
+      <div className="logo">
         <Link to="/">
-          <h2 className="logo">
-            Tienda<span>Libro</span>
-          </h2>
+          <span>TiendaLiBrO</span>
+          <a href="https://google.com">
+            <img src="./assets/img/logo.png" alt="Imagen de Libro" />
+          </a>
         </Link>
-        <ul className="categories">
-          <Link to="/">Todas</Link>
-          <Link to="/category/Finanza Personal">Finanzas</Link>
-          <Link to="/category/Aventura">Ficción|Aventuras</Link>
-          <Link to="/category/Psicología Deportiva">Psicología Deportiva</Link>
-          <Link to="/category/Desarrollo Personal">Desarrollo Personal</Link>
-        </ul>
-        <Link to="/cart">
-          <CartWidget />
-        </Link>
-      </nav>
-    </>
+      </div>*/
+
+    <nav className="container-navbar">
+      <ul className="categories">
+        {navbarLinks.map(({ id, to, label }) => (
+          <Link key={id} to={to}>
+            {label}
+          </Link>
+        ))}
+      </ul>
+
+      {/*<div className="">
+          <Link to="/cart">
+            <CartWidget />
+          </Link>
+          </div>*/}
+    </nav>
+    //</header>
   );
 };

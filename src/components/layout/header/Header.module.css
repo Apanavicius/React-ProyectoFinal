@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
+
+.heaader {
+  background-color: rgb(127, 127, 240);
+  /* display: flex; */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: space-between;
+  color: brown;
+  display: inline;
+}
