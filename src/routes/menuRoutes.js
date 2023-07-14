@@ -38,7 +38,7 @@ export const menuRoutes = [
     Element: CheckoutContainer,
   },
 
-  // Se utiliza sólo para cargar productos.
+  // Se utiliza sólo para cargar productos. Ruta oculta, no vinculada.
   // Restaría probar esto con una validación de usuario antes de ingresar.
   {
     id: "newDoc",

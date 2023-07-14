@@ -2,7 +2,7 @@ import { Button, TextField } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-//  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+//  -  -  -  NO ESTÁ IMPLEMENTADO, CÓDIGO DE PRUEBA -  -  -  -  -  -
 
 export const Form = () => {
   // esto es parte de algún container
@@ -24,9 +24,11 @@ export const Form = () => {
       email: Yup.string()
         .required("Es necesario completar este campo")
         .email("No es un email válido"),
+      phone: Yup.number()
+        .required("Es necesario completar este campo")
+        .min(8, "No es un número válido"),
     }),
   });
-  console.log(errors);
 
   return (
     <div>

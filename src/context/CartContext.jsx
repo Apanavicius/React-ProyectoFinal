@@ -10,7 +10,9 @@ export const CartContext = createContext();
 //Aquí se genera el componente proveedor del contexto.
 
 const CartContextProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("cart")) || []
+  );
 
   const addToCart = (aSelectedProduct) => {
     let exist = isInCart(aSelectedProduct.id);

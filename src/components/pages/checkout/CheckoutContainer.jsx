@@ -51,6 +51,10 @@ export const CheckoutContainer = () => {
       email: Yup.string()
         .required("Es necesario completar este campo")
         .email("No es un email válido"),
+      //Lo siguiente no está funcionando
+      /*phone: Yup.string()
+        .required("Es necesario completar este campo")
+        .min(8, "Debe tener al menos, 8 dígitos"),*/
     }),
   });
 

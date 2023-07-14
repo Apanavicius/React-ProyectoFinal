@@ -1,49 +1,10 @@
-/* a {
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
+
+a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
   text-decoration: none;
   color: rgb(39, 165, 22);
-  /* display: inline;
+  display: inline;
   margin: 1%;
-} */
-
-/*
-nav {
-  display: flex;
-  // align-items: center;
-  justify-content: space-between;
-  padding-top: 70px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 40px;
-  // color: brown; //
-  font-size: larger;
 }
-
-.logo {
-  color: whitesmoke;
-  font-size: 50px;
-}
-
-span {
-  color: rgb(230, 20, 55);
-}
-
-
-
-nav ul {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-nav ul li a {
-  color: rgb(245, 222, 20);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 23px;
-}
-
-nav ul li a:hover {
-  color: blueviolet;
-  transition: 0.5s;
-} */
