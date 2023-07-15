@@ -106,7 +106,7 @@ Se utilizó Vercel para realizar el deployment de la aplicación.
 
 Proyecto:
 
-[TiendaLibro](https://es.wikipedia.org/wiki/Single-page_application "Single Page Application")
+[TiendaLibro](https://react-proyecto-final-chi.vercel.app/)
 
 ---
 
